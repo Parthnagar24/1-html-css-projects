@@ -1,1 +1,124 @@
-c:\_Udemy_Web_Development_repo_2\Udemy_web_development\CSS\07_boxmodel\box.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.6;
+        margin: 10px;
+        padding:10px;
+        background-color: #fff;
+    }
+    h1,h2{
+        color: black;
+    }
+    .box-model-demo {
+        width: 300px;
+        height: 230px;
+        border: 6px solid #000b04;
+        padding: 20px;
+        margin: 30px 0;
+        
+    }
+    .content-box {
+        box-sizing: content-box;
+        background-color: #ffe5e5;}
+
+    .border-box {
+        box-sizing: border-box;
+        background-color: #e5ffe5;
+    }
+    
+
+    .inline-example {
+       background-color: #73e6f3;
+       border: 2px dashed #000;
+       padding: 5px;
+         margin: 10px;
+         width: 200px;
+            height: 100px;
+           
+            direction: ltr;
+        }
+         
+    .block-example {
+        background-color: #78fc9b;
+        padding: 20px;
+        margin: 20px 0;
+        width: 200px;
+        border: 2px dashed hsl(124, 88%, 3%);
+    }
+    .highlight {
+        background-color: yellow;
+        display: inline-block;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+
+</style>
+
+
+  </head>
+  <body>
+    <h1>CSS Box-Model-Example</h1>
+
+    <h2>1.Content Box (Default)</h2>
+    <div class="box-model-demo content-box">
+      <p>This is a content box.</p>
+      <p >Content Box Contents</p>
+    </p> <strong>Actual size: 300px(width) +30px(padding) 
+        + 10px(margin) + border(10px) </strong></p>
+    </p><strong>Height: 200px + 20px padding + 10px border</strong> </p>
+      </div>
+
+    <h2>2.Border Box</h2>
+    <div class="box-model-demo border-box">
+        <p>This is a border box.</p>
+        <p>Border Box Contents</p>
+        <p><strong>Total size:</strong></p><p> 200px(height) + 30px(padding) + 10px(margin) + border(10px)</p>
+        
+<h2>Inline vs Block ELements</h2>
+<p>
+    This is a paragraph with an
+    <span class="inline-example">inline element</span> inside. Inline elements
+    only take up as much width as their content. Width and height settings are
+    ignored unless changed to <code>inline-block</code>.
+  </p>
+
+  <div class="block-example">
+    This is a block-level element. It starts on a new line and takes up full
+    width by default.
+  </div>
+
+
+  <h2>Box Model Components</h2>
+    <p>The box model consists of the following components:</p>
+    <ul>
+      <li>
+        <span class="highlight">Content</span>: Where text and images appear
+      </li>
+      <li>
+        <span class="highlight">Padding</span>: Space around content, inside the
+        border
+      </li>
+      <li>
+        <span class="highlight">Border</span>: Encloses padding and content
+      </li>
+      <li>
+        <span class="highlight">Margin</span>: Space outside the border,
+        separating it from other elements
+      </li>
+    </ul>
+
+    <p class="note">
+      💡 Tip: Use <code>box-sizing: border-box</code> to include padding and
+      border in the element’s total width and height — it simplifies layout!
+    </p>
+
+  </body>
+</html>
+
