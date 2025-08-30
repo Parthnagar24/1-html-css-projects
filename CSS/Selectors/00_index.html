@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selector Examples</title>
+    <style>
+      /* 1. Universal Selector */
+      * {
+        font-family: Arial, sans-serif;
+      }
+
+      /* 2. Type Selector */
+      p {
+        color: blue;
+      }
+      /* 3. Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+      /* 4. ID Selector */
+      #unique {
+        font-weight: bold;
+        color: green;
+      }
+      /* 5. Attribute Selector */
+      input[type="text"] {
+        border: 2px solid orange;
+      }
+      /* 6. Descendant Selector */
+      div span {
+        font-style: italic;
+      }
+      /* 7. Child Selector */
+      ul > li {
+        color: darkred;
+      }
+      /* 8. Adjacent Sibling Selector */
+      h2 + p {
+        background-color: lightgray;
+      }
+      /* 9. General Sibling Selector */
+      h3 ~ p {
+        border-left: 4px solid purple;
+        padding-left: 10px;
+      }
+      /* 10. Pseudo-class Selector */
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      /* 11. Pseudo-element Selector */
+      p::first-line {
+        font-size: 1.2em;
+      }
+
+      /* 12. Grouping Selector */
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Universal Selector (*) -->
+    <div>
+      <!-- 2. Type Selector (p) -->
+      <p>This is a paragraph inside a div.</p>
+
+      <!-- 3. Class Selector (.highlight) -->
+      <p class="highlight">This paragraph has a class.</p>
+
+      <!-- 4. ID Selector (#unique) -->
+      <p id="unique">This paragraph has a unique ID.</p>
+
+      <!-- 5. Attribute Selector ([type="text"]) -->
+      <input type="text" placeholder="Text input" />
+      <input type="password" placeholder="Password input" />
+
+      <!-- 6. Descendant Selector (div span) -->
+      <div>
+        <span>This is a span inside nested div (descendant).</span>
+      </div>
+
+      <!-- 7. Child Selector (ul > li) -->
+      <ul>
+        <li>Direct child 1</li>
+        <li>Direct child 2</li>
+      </ul>
+
+      <!-- 8. Adjacent Sibling Selector (h2 + p) -->
+      <h2>Heading Level 2</h2>
+      <p>Paragraph immediately after h2.</p>
+
+      <!-- 9. General Sibling Selector (h3 ~ p) -->
+      <h3>Heading Level 3</h3>
+      <p>First general sibling paragraph.</p>
+      <p>Second general sibling paragraph.</p>
+
+      <!-- 10. Pseudo-class Selector (a:hover) -->
+      <a href="#">Hover over this link</a>
+
+      <!-- 11. Pseudo-element Selector (p::first-line) -->
+      <p>This paragraph will use a pseudo-element to style its first line.</p>
+
+      <!-- 12. Grouping Selector (h1, h2, h3) -->
+      <h1>Main Heading</h1>
+      <h2>Sub Heading</h2>
+      <h3>Small Heading</h3>
+    </div>
+  </body>
+</html>  EXPLAIN SELECTORS WITH THIS

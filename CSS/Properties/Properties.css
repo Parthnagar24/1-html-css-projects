@@ -1,0 +1,105 @@
+/* ================================
+   1. TEXT & FONT PROPERTIES
+   ================================ */
+
+/* Change text color */
+.text-example {
+  color: blue; /* Sets text color */
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Thickness of text */
+  font-style: italic; /* Italic style */
+  line-height: 1.5; /* Space between lines */
+  text-align: center; /* Aligns text horizontally */
+  text-decoration: underline; /* Adds underline */
+  letter-spacing: 2px; /* Space between letters */
+  word-spacing: 5px; /* Space between words */
+  text-transform: uppercase; /* Converts text to uppercase */
+}
+
+/* ================================
+   2. BACKGROUND PROPERTIES
+   ================================ */
+
+.bg-example {
+  background-color: lightyellow; /* Background color */
+  background-image: url("image.jpg"); /* Set an image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: center; /* Position of background image */
+  background-size: cover; /* Resize image to cover element */
+  background-attachment: fixed; /* Fix image when scrolling */
+}
+
+/* ================================
+   3. BORDER AND SHADOW
+   ================================ */
+
+.border-example {
+  border: 2px solid red; /* Width, style, and color of border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px gray; /* Adds a shadow around the box */
+}
+
+.text-shadow-example {
+  text-shadow: 2px 2px 5px black; /* Shadow behind text */
+}
+
+/* ================================
+   4. DISPLAY & POSITIONING
+   ================================ */
+
+.display-example {
+  display: inline-block; /* Block + inline behavior */
+  visibility: visible; /* Element is visible (hidden will hide but keep space) */
+}
+
+.position-example {
+  position: relative; /* Position relative to itself */
+  top: 10px; /* Push element 10px down */
+  left: 20px; /* Push element 20px right */
+  z-index: 2; /* Stack order */
+}
+
+.flex-example {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.grid-example {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  gap: 10px; /* Space between grid items */
+}
+
+/* ================================
+   5. BOX MODEL (CORE)
+   ================================ */
+
+.box-example {
+  width: 200px; /* Content width */
+  height: 100px; /* Content height */
+  margin: 20px; /* Space outside border */
+  padding: 15px; /* Space inside box */
+  border: 3px solid blue; /* Border around box */
+  box-sizing: border-box; /* Includes padding+border in total width/height */
+}
+
+/* ================================
+   6. COLOR & EFFECTS
+   ================================ */
+
+.color-example {
+  opacity: 0.8; /* Transparency: 1 = solid, 0 = invisible */
+  filter: blur(2px); /* Blur effect */
+}
+
+.effect-example {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5); /* Soft shadow */
+  transition: all 0.3s ease; /* Smooth animation on hover */
+}
+
+.effect-example:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+  background-color: lightgreen; /* Change color on hover */
+}

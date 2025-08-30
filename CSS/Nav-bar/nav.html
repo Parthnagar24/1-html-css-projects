@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        background-color: #050000;
+        color: white;
+      }
+
+      .nav-container {
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      /* Navbar 1 - Horizontal with underline effect */
+      .navbar1 {
+        background-color: #262b2e;
+        padding: 10px;
+      }
+
+      .navbar1 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .navbar1 li {
+        display: inline;
+      }
+
+      .navbar1 a {
+        font: bold 16px Arial, sans-serif;
+        text-decoration: none;
+        color: #24c168;
+        padding: 10px 15px;
+        transition: color 0.3s, border-bottom 0.3s;
+        position: relative;
+      }
+
+      .navbar1 .login-btn {
+        background-color: #24c168;
+        font: bold Arial, sans-serif;
+        color: white;
+        border: none;
+        padding: 4px 12px;
+        cursor: crosshair;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+
+      .navbar1 a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        height: 2px;
+        background-color: #21e476;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar1 a:hover::after {
+        transform: scaleX(1);
+      }
+
+      /* Navbar 2 - Vertical with hover background effect */
+      .navbar2 {
+        background-color: #1009e9;
+        width: 200px;
+        padding: 20px;
+      }
+
+      .navbar2 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar2 li {
+        margin-bottom: 11px;
+      }
+
+      .navbar2 a {
+        font: bold 16px Arial, sans-serif;
+        text-decoration: none;
+        color: #f9f4f4;
+        padding: 10px;
+        width: 100%;
+        display: block;
+      }
+
+      .navbar2 a:hover {
+        background-color: #096a9b;
+      }
+
+      .navbar2 .login-btn {
+        background-color: #1883c6;
+        font: bold Arial, sans-serif;
+        color: white;
+        border: none;
+        padding: 4px 12px;
+        cursor: crosshair;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+
+      /* Navbar 3 - Horizontal with Dropdown */
+      .navbar3 {
+        background-color: #db2ce4;
+        padding: 10px;
+        position: relative;
+      }
+
+      .navbar3 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navbar3 a {
+        text-decoration: none;
+        color: #0f0000;
+        padding: 10px;
+        display: block;
+      }
+
+      .navbar3 .login-btn {
+        background-color: #6f1a7e;
+        font: bold Arial, sans-serif;
+        color: white;
+        border: none;
+        padding: 4px 12px;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+
+      .navbar3 .dropdown {
+        position: relative;
+      }
+
+      .navbar3 .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar3 .dropdown-content li {
+        border-bottom: 1px solid #ddd;
+      }
+
+      .navbar3 .dropdown-content li:last-child {
+        border-bottom: none;
+      }
+
+      .navbar3 .dropdown-content a {
+        color: #000;
+        padding: 10px;
+      }
+
+      .navbar3 .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .navbar3 .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <h1>Variation 1: Horizontal with underline effect</h1>
+      <nav class="navbar1">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Product">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-container">
+      <h1>Variation 2: Vertical with hover effect</h1>
+      <nav class="navbar2">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-container">
+      <h1>Variation 3: Horizontal with dropdown</h1>
+      <nav class="navbar3">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#about">About</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Team Contact</a></li>
+            </ul>
+          </li>
+          <li><a href="#products">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

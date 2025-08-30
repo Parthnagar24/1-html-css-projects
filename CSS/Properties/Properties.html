@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Properties Demo</title>
+  <link rel="stylesheet" href="Properties.css"> <!-- Link to your CSS file -->
+  <style>
+    /* Just to make sections neat */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 15px;
+      border: 1px dashed gray;
+      background: white;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TEXT & FONT PROPERTIES -->
+  <section>
+    <h2>1. Text & Font Properties</h2>
+    <p class="text-example">
+      This is a sample text styled with CSS text & font properties.
+    </p>
+  </section>
+
+  <!-- 2. BACKGROUND PROPERTIES -->
+  <section class="bg-example">
+    <h2>2. Background Properties</h2>
+    <p>
+      This box has a background color and an image.  
+      (Replace <code>image.jpg</code> in CSS with a real image file in your folder.)
+    </p>
+  </section>
+
+  <!-- 3. BORDER & SHADOW -->
+  <section>
+    <h2>3. Border & Shadow</h2>
+    <div class="border-example" style="padding:20px;">
+      Box with border and shadow
+    </div>
+    <p class="text-shadow-example">
+      Text with shadow effect
+    </p>
+  </section>
+
+  <!-- 4. DISPLAY & POSITIONING -->
+  <section>
+    <h2>4. Display & Positioning</h2>
+    <span class="display-example">Inline-Block Example</span>
+    <div class="position-example" style="background:lightblue; padding:10px;">
+      Positioned box (moved down & right)
+    </div>
+    <div class="flex-example" style="height:100px; background:lightgray; margin-top:10px;">
+      <p>Centered with Flexbox</p>
+    </div>
+    <div class="grid-example" style="margin-top:10px; background:lightyellow; padding:10px;">
+      <div style="background:orange; padding:10px;">1</div>
+      <div style="background:lightgreen; padding:10px;">2</div>
+      <div style="background:lightpink; padding:10px;">3</div>
+    </div>
+  </section>
+
+  <!-- 5. BOX MODEL -->
+  <section>
+    <h2>5. Box Model</h2>
+    <div class="box-example" style="background:lightcoral;">
+      Box with margin, padding, border
+    </div>
+  </section>
+
+  <!-- 6. COLOR & EFFECTS -->
+  <section>
+    <h2>6. Color & Effects</h2>
+    <div class="color-example" style="padding:20px; background:skyblue;">
+      Box with opacity & blur effect
+    </div>
+    <button class="effect-example" style="margin-top:20px; padding:10px 20px; border:none; cursor:pointer;">
+      Hover Me (Scale + Color Change)
+    </button>
+  </section>
+
+</body>
+</html>
