@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <h1>User Registration Form</h1>
+
+  <form action="/submit" method="post">
+    <!-- Text Input -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+    <br><br>
+
+    <!-- Number -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="100">
+    <br><br>
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+
+    <!-- Radio (Single Choice: Age Group) -->
+    <label>Age Group:</label><br>
+    <input type="radio" id="teen" name="agegroup" value="teen">
+    <label for="teen">Teen</label>
+    <input type="radio" id="adult" name="agegroup" value="adult">
+    <label for="adult">Adult</label>
+    <input type="radio" id="senior" name="agegroup" value="senior">
+    <label for="senior">Senior</label>
+    <br><br>
+
+    <!-- Checkbox (Multiple Choice) -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+    <br><br>
+
+    <!-- File Upload -->
+    <label for="profile">Upload Profile Picture:</label>
+    <input type="file" id="profile" name="profile">
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Select Country:</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="australia">Australia</option>
+    </select>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="about">About Yourself:</label><br>
+    <textarea id="about" name="about" rows="4" cols="40" placeholder="Write a short bio..."></textarea>
+    <br><br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit Form</button>
+    <button type="reset">Reset Form</button>
+    <button type="button" onclick="alert('Custom Button Clicked!')">Custom Button</button>
+  </form>
+</body>
+</html>
