@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container { display:flex; align-items: center; height:140px; gap:10px; padding:12px; border:1px solid #999; }
+  .item { padding: 10px 14px; border-radius:6px; background:#fff3e0; }
+  .tall { padding: 26px 14px; }
+  .item.top { align-self: flex-start; }    /* overrides container */
+  .item.bottom { align-self: flex-end; }
+</style>
+</head>
+<body>
+    <h2>8) align-self per item</h2>
+  <div class="container">
+    <div class="item top">Top</div>
+    <div class="item tall">Centered (default)</div>
+    <div class="item bottom">Bottom</div>
+  </div>
+</body>
+</html>

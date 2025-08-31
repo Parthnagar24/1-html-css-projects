@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 80px;
+    gap: 8px;
+    padding: 10px;
+  }
+  .item { background:#d1c4e9; display:flex; align-items:center; justify-content:center; border-radius:6px; }
+  .wide { grid-column: span 2; } /* spans 2 columns */
+  .tall { grid-row: span 2; }    /* spans 2 rows */
+</style>
+</head>
+<body>
+    <h2>4) Item spanning</h2>
+  <div class="grid">
+    <div class="item wide">Span 2 cols</div>
+    <div class="item">B</div>
+    <div class="item tall">Span 2 rows</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+  </div>
+</body>
+</html>

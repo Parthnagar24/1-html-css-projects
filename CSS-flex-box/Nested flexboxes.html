@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .outer { display:flex; gap:12px; padding:14px; border:2px solid #444; }
+  .card {
+    flex: 1;
+    padding: 12px;
+    background:#e8f5e9;
+    border-radius:8px;
+    display:flex;
+    flex-direction: column; /* nested flex */
+    gap:8px;
+  }
+  .row { display:flex; gap:8px; }
+  .box { padding:8px; background:#fff; border-radius:6px; text-align:center; flex:1; }
+  .title { font-weight:700; }
+</style>
+</head>
+<body>
+    <h2>9) Nested flex containers</h2>
+  <div class="outer">
+    <div class="card">
+      <div class="title">Card 1</div>
+      <div class="row">
+        <div class="box">A</div>
+        <div class="box">B</div>
+      </div>
+      <div class="box">Footer</div>
+    </div>
+
+    <div class="card">
+      <div class="title">Card 2</div>
+      <div class="row">
+        <div class="box">X</div>
+        <div class="box">Y</div>
+        <div class="box">Z</div>
+      </div>
+      <div class="box">Footer</div>
+    </div>
+  </div>
+</body>
+</html>

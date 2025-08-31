@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Properties Demo</title>
-  <link rel="stylesheet" href="Properties.css"> <!-- Link to your CSS file -->
+
   <style>
-    /* Just to make sections neat */
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
@@ -22,6 +22,106 @@
     h2 {
       margin-bottom: 10px;
       color: darkblue;
+    }
+
+    /* ================================
+       1. TEXT & FONT PROPERTIES
+       ================================ */
+    .text-example {
+      color: blue;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 2.5;
+      text-align: center;
+      text-decoration: underline;
+      letter-spacing: 5px;
+      word-spacing: 5px;
+      text-transform: uppercase;
+      
+    }
+
+    /* ================================
+       2. BACKGROUND PROPERTIES
+       ================================ */
+    .bg-example {
+      background-color: lightyellow;
+      background-image: url("image.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* ================================
+       3. BORDER AND SHADOW
+       ================================ */
+    .border-example {
+      border: 2px solid red;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px gray;
+    }
+
+    .text-shadow-example {
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* ================================
+       4. DISPLAY & POSITIONING
+       ================================ */
+    .display-example {
+      display: inline-block;
+      visibility: visible;
+    }
+
+    .position-example {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    .flex-example {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-example {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* ================================
+       5. BOX MODEL (CORE)
+       ================================ */
+    .box-example {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      padding: 15px;
+      border: 3px solid blue;
+      box-sizing: border-box;
+    }
+
+    /* ================================
+       6. COLOR & EFFECTS
+       ================================ */
+    .color-example {
+      opacity: 0.8;
+      filter: blur(2px);
+    }
+
+    .effect-example {
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .effect-example:hover {
+      transform: scale(1.1);
+      background-color: lightgreen;
     }
   </style>
 </head>

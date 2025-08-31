@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grid 8 - Alignment</title>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px 100px;
+    align-items: center;      /* vertical align */
+    justify-items: center;    /* horizontal align */
+    gap: 10px;
+    border: 1px solid #666;
+    padding: 10px;
+  }
+  .item { background:#dcedc8; width:60px; height:60px; display:flex; align-items:center; justify-content:center; border-radius:6px; }
+</style>
+</head>
+<body>
+  <h2>8) align-items + justify-items</h2>
+  <div class="grid">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+  </div>
+</body>
+</html>

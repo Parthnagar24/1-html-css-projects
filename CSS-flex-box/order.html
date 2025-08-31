@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  .container { display:flex; gap:10px; padding:12px; border:1px solid #bbb; }
+  .item { padding:12px; border-radius:6px; background:#d1c4e9; }
+  .item.a { order: 3; }  /* will appear last */
+  .item.b { order: 1; }  /* will appear first */
+  .item.c { order: 2; }
+</style>
+</head>
+<body>
+    <h2>6) Changing order</h2>
+  <div class="container">
+    <div class="item a">A (order:3)</div>
+    <div class="item b">B (order:1)</div>
+    <div class="item c">C (order:2)</div>
+  </div>
+</body>
+</html>

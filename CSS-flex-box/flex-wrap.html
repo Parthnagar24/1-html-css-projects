@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* try nowrap or wrap-reverse */
+    gap: 8px;
+    max-width: 420px;
+    padding: 12px;
+    border: 1px solid #666;
+  }
+  .item {
+    flex: 0 0 150px; /* fixed width boxes that will wrap */
+    padding: 14px;
+    background:#fff9c4;
+    border-radius:6px;
+    box-sizing: border-box;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+     <h2>5) flex-wrap: wrap</h2>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</body>
+</html>
